@@ -1,0 +1,158 @@
+body{
+    margin: 0,0,0,0;
+    padding: 0,0,0,0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(312deg,#00a4b9,#f0ffff);
+    height: 100vh;
+}
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50em;
+    background: white;
+    border-radius: 1.7vh;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 5% 0;
+    border-bottom: 2px solid silver;
+    font-size: 3em;
+}
+
+.formulario form{
+    padding: 0 8em;
+    box-sizing: border-box;
+}
+
+form .text-space{
+    position: relative;
+    border-bottom: 2px solid #c0c0c0;
+    margin: 2.5em 0;
+}
+
+.text-space input{
+    width: 100%;
+    padding: 0 .2em;
+    height: 2em;
+    font-size: 1.8em;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.text-space label{
+    position: absolute;
+    top: 50%;
+    left: .2em;
+    opacity: 0;
+    transform: translateY(-60%);
+    font-size: 1.8em;
+    pointer-events: none;
+}
+
+.text-space span::before{
+    content: '';
+    position: absolute;
+    top:2em;
+    left: 0px;
+    width: 100%;
+    height: .1em;
+}
+
+.text-space input:focus ~ label{
+    opacity: 1;
+    top: -.4em;
+    color: #3f99ce;
+    transition: .5s;
+}
+
+.text-space input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar{
+    margin:3em 0 ;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.recordar:hover{
+    color: rgb(0, 0, 175);
+    font-size: 1.2em;
+    transition: .2s;
+}
+
+form input[type="submit"]{
+    text-align: center;
+    width: 75%;
+    border: 1px solid;
+    background: #0079be;
+    border-radius: 4vh;
+    transform: translateX(18.5%);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 2em;
+    height: 2.5em;
+}
+
+form input[type="submit"]:hover{
+    background: #005c91;
+    transition: .3s;
+}
+
+.iniciar-sesion{
+    margin: 2.2em 0 ;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.iniciar-sesion a{
+    color: blue;
+    text-decoration: none;
+}
+
+.iniciar-sesion a:hover{
+    text-decoration: underline;
+}
+
+.registrar{
+    margin: 3em 0 ;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.registrar a{
+    color: blue;
+}
+
+.registrar a :hover{
+    text-decoration: underline;
+}
+
+.boton-pregunta{
+    width: 100%;
+}
+
+.usu-cont{
+    float: right;
+    transform: translate(40px,-40px);
+    height: 60px;
+    width: 60px;
+    background-color: #0079be;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.usu-cont:hover{
+    background-color: #005c91;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio de sesion</title>
+    <link rel="stylesheet" href="./css/iniciar-sesion-style.css">
+    <script src="./script/iniciar-sesion.js"></script>
+</head>
+<body>
+    <section class="formulario">
+        <h1>iniciar sesion</h1>
+        <form method="post" id="formulario">
+            <div class="text-space">
+                <input type="text" id="usuario" class="input" required>
+                <label class="etiqueta">nombre de usuario</label>
+            </div>
+            <div class="text-space">
+                <input type="password" id="contraseña" class="input" required>
+                <label class="etiqueta">contraseña</label>
+            </div>
+            <div class="recordar">¿Olvidaste tu contraseña?</div>
+            <input type="submit" value="aceptar" id="boton">
+            <div class="registrar">¿Aun no tienes cuenta?<a href="./crear-cuenta.html">registrate aqui</a></div>
+            <div class="boton-pregunta">
+                <input type="button" class="usu-cont" value="?" id="usu-cont">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
